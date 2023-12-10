@@ -13,7 +13,7 @@ const Navbar = ({handleToggle}) => {
     }
   return (
     <>
-        <NavigationBar className={` ${toggle ? "bg-slate-900" : "bg-slate-200" } `}>
+        <NavigationBar className={` ${toggle ? "bg-slate-900" : "bg-slate-200" } shadow-lg border-b-2`}>
             <h1 className={`text-3xl ${toggle ? "text-white" : "text-black" } font-black`}>NOTE'S-APP</h1>
             {
                 toggle ? <GoSun size={'2rem'} color="white" onClick={toggleMode} /> : <FaMoon size={'2rem'} onClick={toggleMode} />
