@@ -13,7 +13,7 @@ export default function Home() {
   }
 
   return (
-    <div className={`${mode ? 'bg-slate-200' : 'bg-slate-900'} w-full h-[100dvh]`}>
+    <div className={`${mode ? 'bg-slate-200' : 'bg-slate-900'} w-full min-h-[100dvh]`}>
       <Navbar handleToggle={handleToggle} />
       <NoteCont toggle={mode}/>
     </div>
